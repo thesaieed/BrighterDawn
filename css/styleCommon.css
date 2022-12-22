@@ -1,0 +1,370 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+/* This is the header and footer styling common to all pages.. */
+
+
+
+*{
+    box-sizing: border-box;
+    /* font-family: Montserrat, Tahoma, sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size:16px;
+    
+}
+
+.nav-toggle{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+
+
+.active{
+    color: #000;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 1.2em;
+   text-decoration: underline;
+}
+.nav-toggle-label {
+    display: none;
+  }
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85em;
+    margin: auto;
+ 
+  }
+.logo{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 40vw;
+     
+      height: 120px;
+      margin-left: 1em;
+  }
+
+  #logo {
+    
+    transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+    -moz-transform: scale(1.5,1.5);
+    -ms-transform: scale(1.5,1.5);
+    -o-transform: scale(1.5,1.5);
+}
+  
+.orgName{
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.4em;
+      font-weight: bold;
+      display: inline-block;
+      width: 10.9em;
+      margin-left: 5px;
+
+    }
+
+
+  
+  nav {
+    align-items: center;
+    
+  }
+  
+  nav ul {
+    display: flex;
+    margin-top: 1em;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+  }
+
+li,a  {
+    font-size: 15px;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+  
+}
+
+
+ul a:hover{
+    
+    color:rgb(177, 177, 177);
+    
+}
+a:active{
+    color: darkgreen;
+}
+
+/*
+ .donate-now{
+    border: 1px solid #fff;
+    padding: 0.7em 0.6em ;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+.donate-now:hover{
+    background-color: gray;
+    color: black;
+    font-weight: bold;
+   
+} 
+*/
+.maxwidth{
+    max-width: 1080px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexstart{
+    justify-content: left;
+}
+.icon{
+    width: 30px;
+}
+.footer--logo{
+    height: 150px;
+}
+.text-align-justify{
+    text-align: justify;
+}
+footer .flex--part{
+    width: 35%;
+}
+footer{
+    padding-top: 10px;
+}
+.text-align-justify{
+    line-height: 20px;
+}
+
+
+
+
+/* Mobile Styling */ 
+@media screen and (max-width:720px){
+    *{
+        font-size: 13px;
+        margin: auto;
+    }
+    
+    .logo{
+        margin:-1.4em 0.5em;
+       
+    }
+
+    #logo{
+        margin-left: 5em;
+        height: 3em;
+
+ }
+    header {
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        position: fixed;
+        top:0;
+        z-index: 200;
+        width: 100%;
+        height: 5.0em;
+      }
+      
+      
+      .nav-toggle-label {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 2em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      
+    
+      
+      .nav-toggle-label span,
+      .nav-toggle-label span::before,
+      .nav-toggle-label span::after {
+        display: block;
+        background: url("../data/icons/menu.png");
+        background-size: 42px;
+        position: relative;
+        transition: background 300ms ease-in-out 500ms;
+        margin-right: 0.6em;
+      }
+      
+      nav {
+         z-index: 300;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+        position: absolute;
+        text-align: center;
+        top: 100%;
+        left: 0;
+        
+        background: linear-gradient(to bottom, #193838 10%, #06271d 90%);
+        width: 100%;
+        height: 100vh;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 600ms ease-in-out;
+        -webkit-transition: transform 600ms ease-in-out;
+        -moz-transition: transform 600ms ease-in-out;
+        -ms-transition: transform 600ms ease-in-out;
+        -o-transition: transform 600ms ease-in-out;
+
+
+}
+      
+      nav ul {
+          
+        display: block;
+        margin: auto;
+        padding: 5px;
+        list-style: none;
+        z-index: 200;
+
+}
+.active{
+    font-size: 1.5em;
+    color: rgb(145, 145, 145);
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+}
+      
+      nav li {
+          
+        margin-bottom: 6vh;
+        margin-left: 1em;
+        padding-top: 5px;
+      }
+      
+      nav li a {
+          letter-spacing: 2px;
+        color: #f1f0f0;
+        text-decoration: none;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+      }
+      
+      nav a:hover {
+
+        color: gray;
+      }
+      nav a:active{
+          color:black;
+      }
+      
+      .nav-toggle:checked ~ nav {
+        transform: scale(1,1);
+      }
+      
+      .nav-toggle:checked ~ nav a {
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+      }
+      .nav-toggle:checked ~ .nav-toggle-label span,
+      .nav-toggle-label span::before,
+      .nav-toggle-label span::after{
+          background: url("../data/icons/close.png");
+          background-size: 42px;
+          transition: background 300ms ease-in-out 500ms;
+          -webkit-transition: background 300ms ease-in-out 500ms;
+          -moz-transition: background 300ms ease-in-out 500ms;
+          -ms-transition: background 300ms ease-in-out 500ms;
+          -o-transition: background 300ms ease-in-out 500ms;
+}
+footer{
+    flex-wrap: wrap;
+}
+footer .flex--part, footer .flex--part0{
+    width: 100%;
+    margin: 1em auto;
+    padding:1em;
+}
+.footer--logo{
+    height: 90px;
+}
+.flexstart{
+    display: flex;
+    justify-content: start;
+
+}
+
+.address, .footer--logo{
+   display: inline-block;
+}
+
+}
+/*Tab style */
+@media screen and (min-width:720px){
+   
+    li ,a{
+        padding: 0 6px 0 0;
+        
+    }
+    #logo{
+        height: 40px;
+    }
+    
+
+
+}
+@media screen and (min-width:780px){
+    li ,a{
+        padding: 0 10px 0 0;
+    }
+    #logo{
+        height: 47px;
+    }
+}
+@media screen and (min-width:840px){
+    li ,a{
+        padding: 0 14px 0 0;
+    }
+    #logo{
+        height: 50px;
+    }
+
+}
+@media screen and (min-width:900px){
+    li ,a{
+        padding: 0 18px 0 0;
+    }
+    #logo{
+        height: 54px;
+    }
+    
+}
+@media screen and (min-width:960px){
+    li ,a{
+        padding: 0 22px 0 0;
+    }
+    #logo{
+        height: 57px;
+    }
+    
+}
