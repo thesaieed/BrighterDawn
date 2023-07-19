@@ -1,0 +1,263 @@
+*{
+    color: #000000;
+    
+}
+
+
+.maxwidth{
+    margin:auto;
+    max-width: 1080px;
+    margin: 5em auto;
+    text-transform: uppercase;
+  
+}
+.masterContainer{
+    margin:auto;
+    width: 100%;
+}
+.topContainer{
+  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.topContainer, .left,.right{
+    height: 10em;
+}
+.left{
+    display: block;
+    width: 60%;
+}
+.right{
+    width: 40%;
+}
+.floatRight, .floatRight, .Name{
+    width: 100%;
+}
+.floatRight{
+    text-align: right;
+}
+.Name{
+    margin: 0.5em auto;
+    font-size: 2.9em;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#logoo{
+    width: 15em;
+}
+.estd{
+    text-align: right;
+}
+.secondContainer{
+    margin: 3em auto;
+    padding: 1em;
+}
+h1,h2,h3{
+    text-align: center;  
+}
+h1{
+    margin-top: 3em;
+    font-size: 2em;
+    letter-spacing: 2px;color: 
+    rgb(2, 3, 87);
+    
+}
+
+h2{
+    
+    margin-top: 1.5em;
+    font-size: 1.5em;
+}
+h3{ 
+    margin-top: 1em;
+    color: black;
+    font-size: 1em;
+}
+hr{
+    width: 50%;
+    height: 2px;
+    color: rgb(0, 0, 0);
+}
+.footerwidth{
+    width: 90%;
+}
+p{
+    margin: auto;
+    width: 95%;
+    margin-top: 1.5em;
+    text-align: justify;
+    line-height: 1.6em;
+    margin-bottom: 1.5em;
+}
+.ourContributionBox{
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: grey;
+    height: 12em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.heading{
+    border-right: 1px solid black;
+    padding: 0.5em;
+    padding-right: 1em;
+    width: 25%;
+    margin: 0;
+}
+.stats{
+    color: white;
+ 
+    width: 13%;
+    height: 80%;
+    padding: 0.5em;
+}
+.heading h2, .heading h3{
+    color: white;
+    text-align: right;
+}
+.stats img{
+   
+    display: block;
+    margin:  auto;
+    align-self: center;
+    height: 3.5em;
+}
+.stats p{
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-size: 0.6em;
+}
+.stats h4{
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:3em;
+    margin-top: 1em;
+}
+.links a{
+    color: white;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    height: 2.5em;
+    background: rgb(2, 75, 2);
+    letter-spacing: 1px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.links .request{
+    background-color: rgb(8, 156, 8);
+}
+.links a:hover{
+    border:2px solid black;
+    background-color: limegreen;
+    color: black;
+}
+.volunteers p{
+   
+   padding: 0.5em;
+    margin-top: 2em;
+    max-width: 90%;
+    text-align: justify;
+    line-height: 1.6em;
+    margin-bottom: 2em;
+}
+    
+.f1, .f2, .f3,.f4, .f5, .f6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin: 2em auto;
+    padding: 1em;
+}
+.founders{
+    height: 20em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.words{
+    text-align: justify;
+    margin: 1em 1em;
+    line-height: 2.5em;
+}
+.f1 h2, .f3 h2, .f5 h2{
+    text-align: left;
+}
+.f2 h2, .f4 h2, .f6 h2{
+    text-align: right;
+}
+
+
+
+ /* Mobile */
+
+@media screen and (max-width:720px){
+body{
+    font-size: 14px;
+}
+
+.words p{
+    font-size: 0.8em;
+}
+.Name{
+    font-size: 1.8em;
+
+}
+.heading h2, .heading h3{
+    font-size: 0.87em;
+}
+.f1, .f2, .f3, .f3, .f4, .f5, .f6{
+    flex-wrap: wrap;
+}
+.founders{
+    width: 50%;
+}
+.words h2{
+    text-align: center;
+    margin-top: -0em;
+}
+.f2, .f4, .f6{
+flex-direction: column-reverse;
+}
+
+}
+
+@media screen and (max-width:401px){
+    *{
+        font-size: 15px;
+        margin: auto;
+        max-width: 1000vw;
+    }
+    body{
+        margin:auto;
+        width: 200%;
+    }
+    .words p{
+        width: 75%;
+    }
+    
+    }
+    
